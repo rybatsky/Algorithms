@@ -1,14 +1,14 @@
-package princeton.parti.unionfind;
+package princeton.parti.weeki.unionfind;
 
 
-public class WightedQuickUnionUF
+public class PathCompressionQuickUnionUF
 {
     private int[] id;
 
     private int[] size;
 
 
-    public WightedQuickUnionUF(int N)
+    public PathCompressionQuickUnionUF(int N)
     {
         id = new int[N];
         size = new int[N];
@@ -25,6 +25,7 @@ public class WightedQuickUnionUF
     {
         while (i != id[i])
         {
+            id[i] = id[id[i]];
             i = id[i];
         }
 

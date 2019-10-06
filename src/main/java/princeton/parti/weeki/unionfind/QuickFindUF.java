@@ -1,4 +1,4 @@
-package princeton.parti.unionfind;
+package princeton.parti.weeki.unionfind;
 
 
 public class QuickFindUF
